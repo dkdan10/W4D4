@@ -1,0 +1,10 @@
+<h3 class="title_sub_text">Login</h3>
+
+<form action="<%=sessions_url%>" method="POST" class="email_pass_form">
+  <%= auth_token %>
+  <label>Email: <input type="text" name="user[email]" value="<%=@user.email%>"></label>
+  <br>
+  <label>Password: <input type="text" name="user[password]" value=""></label>
+  <br>
+  <input type="submit" value="Log In">
+</form>

@@ -1,0 +1,17 @@
+.logout_form {
+  position:fixed;
+  right:10px;
+  top:5px;
+}
+
+.title_text {
+  text-align: center;
+}
+
+.title_sub_text {
+  text-align: center;
+}
+
+.logup_nav {
+  text-align: center;
+}

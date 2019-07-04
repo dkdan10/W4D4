@@ -1,0 +1,21 @@
+<h1>One Band</h1>
+
+<h3><%=@band.name%></h3>
+<a href="<%=edit_band_url(@band.id)%>">Edit Band</a>
+<a href="<%=bands_url%>">All Bands</a>
+<br>
+<br>
+<br>
+<a href="<%= new_band_album_url(@band.id) %>">Create New Album</a>
+
+<h3>Albums:</h3>
+
+
+<% if @band.albums %>
+  <ul>
+    <% @band.albums.each do |album| %>
+      <li><%=album.title%></li>
+      <a href="<%=album_url(album.id)%>">Album Page</a>
+    <% end %>
+  </ul>
+<% end %>
